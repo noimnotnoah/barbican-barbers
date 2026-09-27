@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbican Barbers Plymouth | Traditional Grooming</title>
+<meta name="description" content="Barbican Barbers in the historic Barbican area of Plymouth. Traditional barbering services with maritime heritage.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+:root { --navy: #0a1628; --maritime-blue: #1a3a5c; --light-blue: #7ab8d4; --white: #f0f4f8; --accent: #4a9ebe; }
+body { font-family: 'Open Sans', sans-serif; background: var(--white); color: #222; line-height: 1.6; }
+h1,h2,h3 { font-family: 'Playfair Display', serif; }
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--maritime-blue) 50%, #0d2b4a 100%);
+  color: var(--white); padding: 100px 20px 80px; text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%234a9ebe' fill-opacity='0.08' d='M0,224L48,213.3C96,203,192,181,288,165.3C384,149,480,139,576,149.3C672,160,768,192,864,197.3C960,203,1056,181,1152,165.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'/%3E%3C/svg%3E") bottom/100% auto no-repeat;
+}
+.hero h1 { font-size: 3.2em; margin-bottom: 10px; letter-spacing: 2px; }
+.hero .subtitle { font-size: 1.3em; color: var(--light-blue); font-weight: 300; letter-spacing: 4px; text-transform: uppercase; }
+.hero .anchor { margin-top: 30px; display: inline-block; background: var(--accent); color: var(--white); padding: 14px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: .3s; }
+.hero .anchor:hover { background: #5eb8d8; transform: translateY(-2px); }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 70px 0; }
+.section h2 { text-align: center; font-size: 2.2em; color: var(--maritime-blue); margin-bottom: 50px; position: relative; }
+.section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent); margin: 12px auto 0; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 30px; }
+.service-card {
+  background: white; border-radius: 12px; padding: 30px; text-align: center;
+  box-shadow: 0 4px 15px rgba(10,22,40,0.08); transition: .3s; border-top: 4px solid var(--accent);
+}
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(10,22,40,0.15); }
+.service-card h3 { color: var(--maritime-blue); font-size: 1.4em; }
+.service-card .price { color: var(--accent); font-size: 1.3em; font-weight: 700; margin: 10px 0; }
+.about { background: linear-gradient(135deg, var(--maritime-blue), var(--navy)); color: var(--white); }
+.about h2 { color: var(--white); }
+.about h2::after { background: var(--light-blue); }
+.about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.about-content p { font-size: 1.1em; color: #c8dce8; }
+.about-features { list-style: none; }
+.about-features li { padding: 8px 0; color: #b0cfdf; position: relative; padding-left: 28px; }
+.about-features li::before { content: '⚓'; position: absolute; left: 0; color: var(--accent); }
+.contact { background: #e8eef5; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.contact-info p { margin: 12px 0; font-size: 1.05em; }
+.contact-info strong { color: var(--maritime-blue); }
+.map-placeholder {
+  background: var(--maritime-blue); border-radius: 12px; height: 220px;
+  display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.2em;
+}
+footer {
+  background: var(--navy); color: #8899aa; text-align: center; padding: 30px 20px; font-size: 0.9em;
+}
+footer a { color: var(--accent); text-decoration: none; }
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2em; }
+  .about-content, .contact-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>⚓ Barbican Barbers</h1>
+  <p class="subtitle">Est. Plymouth — The Barbican</p>
+  <p style="margin:20px 0;font-size:1.1em;color:#9bc8dd;">Traditional barbering at the heart of the historic Barbican</p>
+  <a href="#contact" class="anchor">Book an Appointment</a>
+</header>
+
+<section class="section" id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card"><h3>✂️ Haircut</h3><p>Classic cut &amp; style</p><p class="price">£16</p></div>
+      <div class="service-card"><h3>🧔 Beard Trim</h3><p>Shape &amp; detail</p><p class="price">£10</p></div>
+      <div class="service-card"><h3>💈 Hair &amp; Beard</h3><p>Full groom</p><p class="price">£23</p></div>
+      <div class="service-card"><h3>👦 Kids Cut</h3><p>Under 12</p><p class="price">£12</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <h2>Our Story</h2>
+    <div class="about-content">
+      <div>
+        <p>Founded in the heart of Plymouth's historic Barbican district, Barbican Barbers brings generations of barbering tradition to the waterfront. Our skilled barbers craft cuts that honour maritime heritage whilst keeping you looking sharp for modern life.</p>
+        <p style="margin-top:15px;">Walk-ins welcome — or book ahead to secure your spot.</p>
+      </div>
+      <ul class="about-features">
+        <li>Open 6 days a week</li>
+        <li>Hot towel finishes</li>
+        <li>Traditional cut-throat shaves</li>
+        <li>Student discount available</li>
+        <li>Free parking nearby</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>📍 Address:</strong> Barbican, Plymouth</p>
+        <p><strong>📞 Phone:</strong> <a href="tel:+441752000000" style="color:var(--maritime-blue);text-decoration:none;">01752 000000</a></p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:barbicanbarbers@yahoo.co.uk" style="color:var(--maritime-blue);">barbicanbarbers@yahoo.co.uk</a></p>
+        <p><strong>🕐 Hours:</strong> Mon–Sat 9am–5:30pm</p>
+        <p><strong>📍 Area:</strong> The Barbican, Plymouth</p>
+      </div>
+      <div class="map-placeholder">🗺️ Find us on the Barbican</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Barbican Barbers, Plymouth. All rights reserved.</p>
+  <p>📧 <a href="mailto:barbicanbarbers@yahoo.co.uk">barbicanbarbers@yahoo.co.uk</a></p>
+</footer>
+</body>
+</html>
